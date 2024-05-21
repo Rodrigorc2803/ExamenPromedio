@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 873c80199a59c7a43a69315b3a4e38a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 36
+  velocidad: 55
   vida: 3
   BalaBlanca: {fileID: 8027988114154392776, guid: 52942db908998eb4180773ff0c708c99, type: 3}
   BalaNegra: {fileID: 8027988114154392776, guid: 7db3b5b5ae59cd24ea25efbb37ba55b2, type: 3}

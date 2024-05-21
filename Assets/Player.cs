@@ -51,18 +51,26 @@ public class Player : MonoBehaviour
         if (rb != null)
         {
             rb.velocity = bala.transform.forward * velocidadDeBala ;
+           StartCoroutine(Destruir(bala));
+            
         }
         else
         {
             Debug.LogWarning("La bala no tiene un Rigidbody adjunto.");
         }
     }
-   void OnTriggerEnter(Collider other)
+   void OnTriggerExit(Collider other)
    {
         if (other.CompareTag("Enemy"))
-        {
+        {       
             Destroy(other.gameObject);
             vida--;
         }
    }
+   IEnumerator Destruir(GameObject bullet)
+    {
+        
+        yield return new WaitForSeconds(5f);   
+        Destroy(bullet.gameObject);
+    }
 }

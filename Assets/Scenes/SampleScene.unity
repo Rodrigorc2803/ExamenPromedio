@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 1169820566}
   - component: {fileID: 1169820565}
   - component: {fileID: 1169820564}
+  - component: {fileID: 1169820568}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -345,10 +346,60 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.27, z: -2.85}
-  m_LocalScale: {x: 0.93813, y: 0.93813, z: 0.93813}
+  m_LocalScale: {x: 2.2814384, y: 2.2814384, z: 2.2814384}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1182016153}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1169820568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169820563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873c80199a59c7a43a69315b3a4e38a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 36
+  vida: 3
+  BalaBlanca: {fileID: 8027988114154392776, guid: 52942db908998eb4180773ff0c708c99, type: 3}
+  BalaNegra: {fileID: 8027988114154392776, guid: 7db3b5b5ae59cd24ea25efbb37ba55b2, type: 3}
+  point: {fileID: 1182016153}
+  velocidadDeBala: 55
+--- !u!1 &1182016152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1182016153}
+  m_Layer: 0
+  m_Name: Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1182016153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182016152}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.911}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1169820567}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366869109
 GameObject:
